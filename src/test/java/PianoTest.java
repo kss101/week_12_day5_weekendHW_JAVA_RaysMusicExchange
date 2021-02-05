@@ -13,7 +13,7 @@ public class PianoTest {
     }
 
     @Test
-    public void canCreateGuitar(){
+    public void canCreatePiano(){
         assertNotNull(this.piano);
     }
 
