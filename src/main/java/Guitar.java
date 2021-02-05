@@ -7,10 +7,6 @@ public class Guitar extends Instrument {
         this.numOfFrets = numOfFrets;
     }
 
-    public Guitar(String madeFrom, String category, String colour) {
-        super(madeFrom, category, colour);
-    }
-
     public int getNumOfFrets() {
         return numOfFrets;
     }
