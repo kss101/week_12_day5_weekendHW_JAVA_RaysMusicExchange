@@ -1,9 +1,10 @@
-public abstract class Instrument implements IPlay {
+public abstract class Instrument extends ItemForSale implements IPlay, ISell {
     private String madeFrom;
     private String category;
     private String colour;
 
-    public Instrument(String madeFrom, String category, String colour) {
+    public Instrument(String description, double boughtPrice, double sellPrice, String madeFrom, String category, String colour) {
+        super(description, boughtPrice, sellPrice);
         this.madeFrom = madeFrom;
         this.category = category;
         this.colour = colour;

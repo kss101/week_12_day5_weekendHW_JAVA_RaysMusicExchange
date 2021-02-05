@@ -2,8 +2,8 @@ public class Guitar extends Instrument {
 
     private int numOfFrets;
 
-    public Guitar(String madeFrom, String category, String colour, int numOfFrets) {
-        super(madeFrom, category, colour);
+    public Guitar(String description, double boughtPrice, double sellPrice, String madeFrom, String category, String colour, int numOfFrets) {
+        super(description, boughtPrice, sellPrice, madeFrom, category, colour);
         this.numOfFrets = numOfFrets;
     }
 
@@ -17,5 +17,9 @@ public class Guitar extends Instrument {
 
     public String play() {
         return "Strum strum";
+    }
+
+    public double calculateMarkup() {
+        return 0;
     }
 }

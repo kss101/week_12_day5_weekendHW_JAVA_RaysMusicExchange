@@ -9,7 +9,7 @@ public class ViolinTest {
 
     @Before
     public void before(){
-        violin = new Violin( "Wood", "String", "Brown", ViolinType.BEGINNER);
+        violin = new Violin("Entry level violin suitable for a beginner", 60, 135.99, "Wood", "String", "Brown", ViolinType.BEGINNER);
     }
 
     @Test

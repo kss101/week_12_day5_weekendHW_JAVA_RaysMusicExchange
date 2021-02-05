@@ -9,7 +9,7 @@ public class PianoTest {
 
     @Before
     public void before(){
-        piano = new Piano( "Wood", "Keyboard", "Black", PianoType.BEGINNER);
+        piano = new Piano( "Upright piano",299.00,400.00,"Wood", "Keyboard", "Black", PianoType.BEGINNER);
     }
 
     @Test
