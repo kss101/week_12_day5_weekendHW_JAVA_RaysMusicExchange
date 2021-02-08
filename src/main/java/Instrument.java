@@ -1,4 +1,4 @@
-public abstract class Instrument extends ItemForSale implements IPlay, ISell {
+public abstract class Instrument extends ItemForSale implements IPlay {
     private String madeFrom;
     private String category;
     private String colour;

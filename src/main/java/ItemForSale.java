@@ -34,7 +34,7 @@ public class ItemForSale implements ISell{
     }
 
     public double calculateMarkup() {
-        double markUp = ( sellPrice / boughtPrice ) * 100;
+        double markUp = (( sellPrice - boughtPrice ) / boughtPrice) * 100;
         return Math.round(markUp * 100.0 )/100.0;
     }
 }

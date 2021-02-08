@@ -19,7 +19,4 @@ public class Guitar extends Instrument {
         return "Strum strum";
     }
 
-    public double calculateMarkup() {
-        return 0;
-    }
 }

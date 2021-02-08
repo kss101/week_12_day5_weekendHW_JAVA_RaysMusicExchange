@@ -34,6 +34,13 @@ public class ShopTest {
     }
 
     @Test
+    public void canAddInstrumentToStock(){
+        Violin violin = new Violin("Entry level violin suitable for a beginner", 60, 135.99, "Wood", "String", "Brown", ViolinType.BEGINNER);
+        raysMusicExchange.addItemToStock(violin);
+        assertEquals(1, raysMusicExchange.getStock().size());
+    }
+
+    @Test
     public void canGetDetailsOfStockItem(){
         ItemForSale musicSheet = new ItemForSale("Pad of 25 pages of blank sheet music paper", 2.50, 10);
         raysMusicExchange.addItemToStock(musicSheet);
@@ -51,12 +58,7 @@ public class ShopTest {
         assertEquals(0, raysMusicExchange.getStock().size());
     }
 
-    @Test
-    public void canAddInstrumentToStock(){
-       Violin violin = new Violin("Entry level violin suitable for a beginner", 60, 135.99, "Wood", "String", "Brown", ViolinType.BEGINNER);
-       raysMusicExchange.addItemToStock(violin);
-       assertEquals(1, raysMusicExchange.getStock().size());
-    }
+
 
     @Test
     public void canRemoveInstrumentFromStock(){

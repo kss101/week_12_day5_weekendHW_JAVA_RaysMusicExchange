@@ -24,4 +24,12 @@ public class Shop {
         this.stock = stock;
     }
 
+//    public double getTotalPotentialProfit(ArrayList<ISell> stock){
+//        double totalProfit = 0.00;
+//        for(ISell stockItem : stock ){
+//            double percentageMarkup = stockItem.calculateMarkup();
+//            ((ItemForSale)stockItem).
+//
+//        }
+//    }
 }
